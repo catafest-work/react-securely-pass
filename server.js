@@ -9,8 +9,8 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const ASTRA_TOKEN = "AstraCS:EHrWFJxuCxqZzjFFxZOtSNxL:3582d57b993acd384684551ded17a076f9e55065e0cfc42d4301b0130d41ceff"
-const ASTRA_URL = "https://199bbb03-265c-4937-869e-a2e3001cf23e-europe-west1.apps.astra.datastax.com/api/rest/v2/namespaces/hashedpasswords/collections/hashedpasswords_collection"
+const ASTRA_TOKEN = "AstraCS:"
+const ASTRA_URL = "https://astradb_collection"
 app.post('/signup', async (req, res) => {
   console.log(req.body)
   const { username, password } = req.body 
