@@ -15,7 +15,7 @@ const App = () => {
       return
     }
 
-    axios.post('http://localhost:8000/signup', {
+    axios.post('/signup', {
       username, 
       password
     })
